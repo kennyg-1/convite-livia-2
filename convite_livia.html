@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Convite para um Jantar</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #ffe0ec, #e0f7ff);
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 30px;
+    }
+    .card {
+      background-color: white;
+      border-radius: 20px;
+      padding: 30px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      max-width: 500px;
+      width: 100%;
+    }
+    h1 {
+      color: #e91e63;
+      text-align: center;
+    }
+    label, p {
+      font-size: 1.1em;
+      margin-top: 15px;
+    }
+    input[type="text"], textarea {
+      width: 100%;
+      padding: 10px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      margin-top: 8px;
+    }
+    .options {
+      margin-top: 20px;
+    }
+    button, a.button {
+      background-color: #e91e63;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 10px;
+      text-decoration: none;
+      cursor: pointer;
+      margin-top: 20px;
+      display: inline-block;
+    }
+    button:hover, a.button:hover {
+      background-color: #d81b60;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Oi Lívia 💕</h1>
+    <p>Gostaria de te convidar para um jantar comigo. O que você acha?</p>
+
+    <div class="options">
+      <p><strong>Você aceita?</strong></p>
+      <a href="https://api.whatsapp.com/send/?phone=48996670383&text&type=phone_number&app_absent=0" class="button">Sim, eu aceito!</a>
+
+      <p>Não 😢</p>
+
+      <p>Sim, mas em outro momento:</p>
+      <textarea placeholder="Quando seria um bom momento?"></textarea>
+    </div>
+
+    <div class="options">
+      <p><strong>Sobre o local do jantar:</strong></p>
+      <p>Sugerir um local:</p>
+      <input type="text" placeholder="Digite sua sugestão aqui" />
+
+      <p>Ou pode deixar que eu escolho 😄</p>
+    </div>
+  </div>
+</body>
+</html>
